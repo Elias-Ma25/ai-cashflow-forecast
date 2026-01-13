@@ -1,17 +1,20 @@
 # KI-gestützter 13-Wochen-Cash-Forecast
 
-## Start der Anwendung
+Interaktiver Prototyp zur Liquiditätsplanung für CFO-Mandate.  
+Die Anwendung kombiniert einen 13-Wochen-Cashflow-Forecast mit
+Szenario- und Sensitivitätsanalysen sowie einer KI-gestützten
+Analyse aus CFO-Perspektive.
 
-1. Python 3.10+ installieren:
-   https://www.python.org/downloads/windows/
-   (Option „Add Python to PATH“ aktivieren)
+---
 
-2. ZIP entpacken
+## Start der Anwendung (lokal)
 
-3. Doppelklick auf start_app.bat
+### Voraussetzungen
+- Python 3.11 oder höher
+- Internetverbindung (für die Nutzung der KI-Analyse)
 
-Der Browser öffnet sich automatisch und die Anwendung startet lokal.
+### Installation und Start
 
-## KI-Funktion
-Der OpenAI API-Key ist in der Datei `.env` hinterlegt und dient
-ausschließlich Demonstrationszwecken.
+```bash
+pip install -r requirements.txt
+streamlit run app_streamlit.py
