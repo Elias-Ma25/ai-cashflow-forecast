@@ -5,16 +5,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from openai import OpenAI
+from auth import require_login
 
-# ----------------------------------------------------
-# Passwortschutz
-# ----------------------------------------------------
-APP_PASSWORD = os.getenv("APP_PASSWORD")
-if APP_PASSWORD:
-    pw = st.text_input("🔒 Demo-Passwort", type="password")
-    if pw != APP_PASSWORD:
-        st.stop()
-
+require_login("KI-gestützter 13-Wochen-Cash-Forecast")
 
 # ----------------------------------------------------
 # 1. Setup (Seite konfigurieren)
